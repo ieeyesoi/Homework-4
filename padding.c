@@ -1,5 +1,5 @@
-#include <stdio.h>
-struct student {    //구조체 변수 생성 시작
+#include <stdio.h>  //<stdio.h> 라이브러리 포함
+struct student {    //student 구조체를 정의함
     char lastName[13]; /* 13 bytes */   //char타입 데이터를 13개 담을 수 있는 배열을 student 구조체에 생성(선언), 초기화를 안 했기 때문에 쓰레기값이 저장됨
     int studentId; /* 4 bytes */    //int타입 구조체 변수 studentId 선언
     short grade; /* 2 bytes */  //short타입 구조체 변수 grade 선언
@@ -7,7 +7,7 @@ struct student {    //구조체 변수 생성 시작
 
 int main() {    //메인 함수의 시작
 
-    struct student pst; //struct student 구조체 변수 pst를 선언
+    struct student pst; //student 구조체 변수 pst를 선언
 
     printf("size of student = %ld\n", sizeof(struct student)); //size of student = 구조체 student의 전체 메모리 크기 출력, 
     printf("size of int = %ld\n", sizeof(int)); //size of int = 구조체 중 int형 변수의 메모리 크기 출력, 4bytes
